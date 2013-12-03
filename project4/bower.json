@@ -1,0 +1,11 @@
+{
+  "name": "project4",
+  "version": "0.1.0",
+  "dependencies": {
+    "foundation": "~5.0.2",
+    "requirejs": "~2.1.4",
+    "modernizr": "~2.6.2",
+    "jquery": "~2.0.3"
+  },
+  "devDependencies": {}
+}
