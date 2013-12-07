@@ -15,9 +15,9 @@ Use the Yeoman generator-webapp.
 
 Use Bower to uninstall sass-bootstrap.
 
-Use Bower to install foundation (5).
+Use Bower to install Foundation 5.
 
-Update bower.json and run boer update.
+Update bower.json and run 'bower update'.
 
 Update /app/index.html:
   Remove bootstrap javascript.
