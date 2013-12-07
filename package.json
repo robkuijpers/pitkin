@@ -41,16 +41,16 @@
     "matchdep": "~0.1.1",
     "connect-livereload": "~0.1.1"
   },
-//  "bin": {
-//    "http-server": "./bin/http-server"
-//  },
-//  "scripts": {
-//    "start": "node ./bin/http-server",
-//    "test": "vows --spec --isolate",
-//    "predeploy": "echo This will be run before deploying the app",
-//    "postdeploy": "echo This will be run after deploying the app"
-//  },
-//  "main": "./lib/http-server",
+  "bin": {
+    "http-server": ""
+  },
+  "scripts": {
+    "start": "",
+    "test": "",
+    "predeploy": "echo This will be run before deploying the app",
+    "postdeploy": "echo This will be run after deploying the app"
+  },
+  "main": "",
   "engines": {
     "node": ">=0.8.0"
   }
