@@ -142,5 +142,11 @@
         <!-- build:js scripts/main.js -->
         <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
         <!-- endbuild -->
+
+      <script>
+        var app = require(['app'], function(app, $) {
+          app.sayHello('rob');
+        });
+      </script>
 </body>
 </html>

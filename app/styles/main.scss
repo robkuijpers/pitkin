@@ -1,7 +1,9 @@
 $iconSpritePath: "../images/glyphicons-halflings.png";
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
+// Customize foundation globals, don't leave it in bower_components.
 @import "./foundation/settings";
+
 @import "../bower_components/foundation/scss/normalize";
 @import "../bower_components/foundation/scss/foundation";
 

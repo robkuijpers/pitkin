@@ -1,6 +1,20 @@
 {
   "name": "project4",
   "version": "0.1.0",
+  "description": "Project as excercise using foundation5, sass, bower, grunt, angular and travis.",
+  "keywords": "foundation5 bower grunt angularjs",
+  "location": "https://github.com/robkuijpers/pitkin",
+  "licenses": "GPL-2.0+",
+  "author": "dekuijpers <dekuijpers@gmail.com>",
+  "contributors": [ {
+      "name": "Rob Kuijpers", "email": "dekuijpers@gmail.com"
+   } ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/robkuijpers/pitkin.git"
+  },
+  "homepage": "https://github.com/robkuijpers/pitkin",
+  "private": false,
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -27,6 +41,16 @@
     "matchdep": "~0.1.1",
     "connect-livereload": "~0.1.1"
   },
+//  "bin": {
+//    "http-server": "./bin/http-server"
+//  },
+//  "scripts": {
+//    "start": "node ./bin/http-server",
+//    "test": "vows --spec --isolate",
+//    "predeploy": "echo This will be run before deploying the app",
+//    "postdeploy": "echo This will be run after deploying the app"
+//  },
+//  "main": "./lib/http-server",
   "engines": {
     "node": ">=0.8.0"
   }

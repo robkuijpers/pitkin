@@ -1,6 +1,18 @@
 /*global define */
-define([], function () {
-    'use strict';
+define(["jquery"], function ($) {
 
-    return '\'Allo \'Allo!';
+    $(function() {
+      alert('loaded');
+      // $('body').css('background', 'blue');
+    });
+
+    function sayHello(name) {
+       alert("Hello " + name);
+       // $('body').css('background', 'blue');
+    };
+
+   return {
+      sayHello: sayHello
+    }
+
 });

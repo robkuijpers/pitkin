@@ -1,6 +1,19 @@
 {
   "name": "project4",
   "version": "0.1.0",
+  "description": "Project as excercise using foundation5, sass, bower, grunt, angular and travis.",
+  "keywords": "foundation5 bower grunt angularjs",
+  "location": "https://github.com/robkuijpers/pitkin",
+  "license": "GPL-2.0+",
+  "authors": [
+    { "name": "Rob Kuijpers", "email": "dekuijpers@gmail.com" }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/robkuijpers/pitkin.git"
+  },
+  "homepage": "https://github.com/robkuijpers/pitkin",
+  "private": true,
   "dependencies": {
     "foundation": "~5.0.2",
     "requirejs": "~2.1.4",

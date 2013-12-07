@@ -36,15 +36,21 @@ Create travis-CI project.
 
 Update README.md with Travis icon.
 
-TODO: add my photo to linkedin, github, whatsapp.
+Setup RequireJS to load jQuery and Foundation5 incl. modules.
 
-TODO: add Foundation javascript components with requirejs.
-TODO: add custom javascript code in app.js and javascript modules with requirejs.
+----------------------------
+
+TODO: add my photo to linkedin and update, github, whatsapp.
+TODO: test Foundation javascript components with requirejs and use extra javascript/jquery plugins as touch etc.
 TODO: add custom scss in main.scss and/or sass fragments.
-TODO: add foundation icon fonts.
+TODO: add foundation icon fonts and build in dist
 TODO: publish Grunt dist directory to webserver.
+TODO: add gui tests with headless browser.
 TODO: create Spring Boot app with JSON rest service.
 TODO: create nodejs / express / mongo app with rest service (MEAN stack).
 TODO: add AngularJS and invoke rest services.
 
 Question: should we use jquery and modernizr from foundation or the separate installed ones? pro/cons.
+  - use separate modernizr: (1) its included in the generator, (2) needs to be on top anyway so cannot load with requirejs.
+    (3) easy upgrade with bower.json, until we know what is the difference with foundation's modernizr.
+  - use separate jquery: (1) included in generator, easy upgrade with bower.json
