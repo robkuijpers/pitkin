@@ -2,7 +2,7 @@
 define(["jquery"], function ($) {
 
     $(function() {
-      alert('loaded');
+      // alert('loaded');
       // $('body').css('background', 'blue');
     });
 

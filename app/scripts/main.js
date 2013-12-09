@@ -1,10 +1,10 @@
 require.config({
   paths: {
-    jquery: '../bower_components/jquery/jquery',
-    f:      '../bower_components/foundation/js'
+    'jquery'     : '../bower_components/jquery/jquery',
+    'fd'         : '../bower_components/foundation/js'
   },
   shim: {
-    "../bower_components/foundation/js/foundation" : { deps: ["jquery"], exports: "Foundation" },
+    "../bower_components/foundation/js/foundation" : { deps: ["jquery"] },
     "../bower_components/foundation/js/foundation/foundation.abide": { deps: ["jquery", "foundation"] },
     "../bower_components/foundation/js/foundation/foundation.accordion": { deps: ["jquery", "foundation"] },
     "../bower_components/foundation/js/foundation/foundation.alert": { deps: ["jquery", "foundation"] },
@@ -18,29 +18,33 @@ require.config({
     "../bower_components/foundation/js/foundation/foundation.reveal": { deps: ["jquery", "foundation"] },
     "../bower_components/foundation/js/foundation/foundation.tab": { deps: ["jquery", "foundation"] },
     "../bower_components/foundation/js/foundation/foundation.tooltip": { deps: ["jquery", "foundation"] },
-    "../bower_components/foundation/js/foundation/foundation.topbar": { deps: ["jquery", "foundation"] }
+    "../bower_components/foundation/js/foundation/foundation.topbar": { deps: ["jquery", "foundation"] },
   }
 });
 
 require([
   'app',
   'jquery',
-  "f/foundation",
-  "f/foundation/foundation.abide",
-  "f/foundation/foundation.accordion",
-  "f/foundation/foundation.alert",
-  "f/foundation/foundation.clearing",
-  "f/foundation/foundation.dropdown",
-  "f/foundation/foundation.interchange",
-  "f/foundation/foundation.joyride",
-  "f/foundation/foundation.magellan",
-  "f/foundation/foundation.offcanvas",
-  "f/foundation/foundation.orbit",
-  "f/foundation/foundation.reveal",
-  "f/foundation/foundation.tab",
-  "f/foundation/foundation.tooltip",
-  "f/foundation/foundation.topbar"
+  "fd/foundation",
+  "fd/foundation/foundation.abide",
+  "fd/foundation/foundation.accordion",
+  "fd/foundation/foundation.alert",
+  "fd/foundation/foundation.clearing",
+  "fd/foundation/foundation.dropdown",
+  "fd/foundation/foundation.interchange",
+  "fd/foundation/foundation.joyride",
+  "fd/foundation/foundation.magellan",
+  "fd/foundation/foundation.offcanvas",
+  "fd/foundation/foundation.orbit",
+  "fd/foundation/foundation.reveal",
+  "fd/foundation/foundation.tab",
+  "fd/foundation/foundation.tooltip",
+  "fd/foundation/foundation.topbar",
+  "fd/vendor/fastclick",
+  "fd/vendor/placeholder",
+  "fd/vendor/jquery.autocomplete",
+  "fd/vendor/jquery.cookie"
 ], function (app, $) {
   $(document).foundation();
-  app.sayHello('test');
+  //app.sayHello('test');
 });
