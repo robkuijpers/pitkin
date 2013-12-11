@@ -3,11 +3,12 @@
 require.config({
 
     paths: {
-        'jquery'     : '../bower_components/jquery/jquery',
-        'fd'         : '../bower_components/foundation/js'
+        'angular': '../bower_components/angular/angular',
+        'jquery' : '../bower_components/jquery/jquery',
+        'fd'     : '../bower_components/foundation/js'
     },
     shim: {
-        '../bower_components/foundation/js/foundation' : { deps: ['jquery'] },
+        '../bower_components/foundation/js/foundation': { deps: ['jquery'] },
         '../bower_components/foundation/js/foundation/foundation.abide': { deps: ['jquery', 'foundation'] },
         '../bower_components/foundation/js/foundation/foundation.accordion': { deps: ['jquery', 'foundation'] },
         '../bower_components/foundation/js/foundation/foundation.alert': { deps: ['jquery', 'foundation'] },
@@ -28,7 +29,6 @@ require.config({
 require([
     'app',
     'jquery',
-    'fd/foundation',
     'fd/foundation/foundation.abide',
     'fd/foundation/foundation.accordion',
     'fd/foundation/foundation.alert',
@@ -49,5 +49,5 @@ require([
     'fd/vendor/jquery.cookie'
 ], function (app, $) {
     $(document).foundation();
-    //app.sayHello('test');
+    // app.sayHello('test');
 });

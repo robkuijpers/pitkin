@@ -9,12 +9,12 @@ define(['jquery'], function ($) {
     });
 
     function sayHello(name) {
-        alert('Hello ' + name);
+        return('Hello ' + name);
         // $('body').css('background', 'blue');
     }
 
     function sayBye(name) {
-        alert('Bye ' + name);
+        return('Bye ' + name);
         // $('body').css('background', 'blue');
     }
 

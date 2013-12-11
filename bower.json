@@ -6,7 +6,10 @@
   "location": "https://github.com/robkuijpers/pitkin",
   "license": "GPL-2.0+",
   "authors": [
-    { "name": "Rob Kuijpers", "email": "dekuijpers@gmail.com" }
+    {
+      "name": "Rob Kuijpers",
+      "email": "dekuijpers@gmail.com"
+    }
   ],
   "repository": {
     "type": "git",
@@ -15,10 +18,12 @@
   "homepage": "https://github.com/robkuijpers/pitkin",
   "private": true,
   "dependencies": {
+    "angular": "~1.2.4",
     "foundation": "~5.0.2",
     "requirejs": "~2.1.4",
     "modernizr": "~2.6.2",
     "jquery": "~2.0.3"
   },
-  "devDependencies": {}
+  "devDependencies": { 
+  }
 }

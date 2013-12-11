@@ -1,4 +1,4 @@
-pitkin
+Pitkin
 ======
 
 Repository with Yeoman / Bower / Grunt based projects using Foundation 5 sass version.
@@ -61,14 +61,23 @@ Create a dist build and copy it to the webserver:
 
 Note: add "devel": true to .jshint.rc if you dont't want warnings for alert and console.
 
+Followed http://spring.io/guides/gs/rest-service-cors/ to create Spring Boot rest service (you also can add Actuator).
+Followed http://spring.io/guides/gs/accessing-data-mongo/ to create Spring Boot MongoDB app.
+Followed http://spring.io/guides/gs/consuming-rest-angularjs/ to use Angular to invoke rest service.
+
+
 ----------------------------
 
 TODO: add my photo to linkedin and update, github, whatsapp.
-TODO: add gui tests with headless browser.
+TODO: add gui tests with headless browser.  See sample from angular-require-seed.
 TODO: create Spring Boot app with JSON rest service and mongodb
 TODO: create nodejs / express / mongodb app with rest service (MEAN stack).
-TODO: add AngularJS and invoke rest services.
+TODO: add AngularJS and invoke rest services (test remove jquery because angular has subset in it).
 
 Notes:
   - use separate modernizr: (1) its included in the generator, (2) has all options included, (3) needs to be on top anyway so cannot load with requirejs, (4) easy upgrade with bower.json.
   - use separate jquery: (1) included in generator, easy upgrade with bower.json to latest version.
+
+---------------------------
+
+Pitkin: County in the Colorado Rockies.
