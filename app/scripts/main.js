@@ -29,6 +29,7 @@ require.config({
 require([
     'app',
     'jquery',
+    'fd/foundation',
     'fd/foundation/foundation.abide',
     'fd/foundation/foundation.accordion',
     'fd/foundation/foundation.alert',
@@ -49,5 +50,5 @@ require([
     'fd/vendor/jquery.cookie'
 ], function (app, $) {
     $(document).foundation();
-    // app.sayHello('test');
+    app.sayHello('test');
 });

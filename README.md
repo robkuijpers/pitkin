@@ -68,11 +68,10 @@ Followed http://spring.io/guides/gs/consuming-rest-angularjs/ to use Angular to 
 
 ----------------------------
 
-TODO: add my photo to linkedin and update, github, whatsapp.
-TODO: add gui tests with headless browser.  See sample from angular-require-seed.
-TODO: create Spring Boot app with JSON rest service and mongodb
+
+TODO: add unit and gui tests with headless browser using Karma, Jasmine (PhantomJS).
 TODO: create nodejs / express / mongodb app with rest service (MEAN stack).
-TODO: add AngularJS and invoke rest services (test remove jquery because angular has subset in it).
+TODO: add AngularJS (requirejs) and invoke rest service.
 
 Notes:
   - use separate modernizr: (1) its included in the generator, (2) has all options included, (3) needs to be on top anyway so cannot load with requirejs, (4) easy upgrade with bower.json.
