@@ -4,10 +4,17 @@ require.config({
 
     paths: {
         'angular': '../bower_components/angular/angular',
+//        'angularRoute': '../../bower_components/angular-route/angular-route',
+//        'angularMocks': '../../bower_components/angular-mocks/angular-mocks',
+
         'jquery' : '../bower_components/jquery/jquery',
         'fd'     : '../bower_components/foundation/js'
     },
     shim: {
+        'angular'     : { 'exports': 'angular' },
+//      'angularRoute': { deps: ['angular'] },
+//      'angularMocks': { deps: ['angular'], 'exports': 'angular.mock'},
+        'hello'       : { deps: ['angular'] },
         '../bower_components/foundation/js/foundation': { deps: ['jquery'] },
         '../bower_components/foundation/js/foundation/foundation.abide': { deps: ['jquery', 'foundation'] },
         '../bower_components/foundation/js/foundation/foundation.accordion': { deps: ['jquery', 'foundation'] },
@@ -23,12 +30,18 @@ require.config({
         '../bower_components/foundation/js/foundation/foundation.tab': { deps: ['jquery', 'foundation'] },
         '../bower_components/foundation/js/foundation/foundation.tooltip': { deps: ['jquery', 'foundation'] },
         '../bower_components/foundation/js/foundation/foundation.topbar': { deps: ['jquery', 'foundation'] }
-    }
+    },
+    priority: [ 'angular' ]
 });
+
+// http://code.angularjs.org/1.2.1/docs/guide/bootstrap#overview_deferred-bootstrap
+window.name = 'NG_DEFER_BOOTSTRAP!';
 
 require([
     'app',
     'jquery',
+    'angular',
+    'hello',
     'fd/foundation',
     'fd/foundation/foundation.abide',
     'fd/foundation/foundation.accordion',
@@ -48,7 +61,18 @@ require([
     'fd/vendor/placeholder',
     'fd/vendor/jquery.autocomplete',
     'fd/vendor/jquery.cookie'
-], function (app, $) {
+], function (app, $, angular) {
+
+    // Defferred bootstrap to load extra modules.
+    var $html = angular.element(document.getElementsByTagName('html')[0]);
+
+    angular.element(document).ready(function() {
+      var myApp = angular.module('myApp', []);
+      //angular.resumeBootstrap($html.get(0),['myApp']);
+      angular.resumeBootstrap(['myApp']);
+    });
+
     $(document).foundation();
-    app.sayHello('test');
+
+  app.sayHello('test');
 });
