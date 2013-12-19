@@ -77,6 +77,7 @@ Addded junit, midway and e2e testing in Angular with Karma, Macha and Chai follo
 TODO: add unit and gui tests with headless browser using Karma, Jasmine (PhantomJS).
 TODO: create nodejs / express / mongodb app with rest service (MEAN stack).
 TODO: invoke rest service with angular.
+TODO:
 
 Notes:
   - use separate modernizr: (1) its included in the generator, (2) has all options included, (3) needs to be on top anyway so cannot load with requirejs, (4) easy upgrade with bower.json.
