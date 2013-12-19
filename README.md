@@ -70,7 +70,10 @@ Added AngularJS following:
   - Is angular-mock bundeled in dist app? If yes, do we need a separate require.js for testing?
 
 Addded junit, midway and e2e testing in Angular with Karma, Macha and Chai following:
-  http://www.yearofmoo.com/2013/01/full-spectrum-testing-with-angularjs-and-karma.html#interceptors-and-mocks-in-angularjs
+  See: http://www.yearofmoo.com/2013/01/full-spectrum-testing-with-angularjs-and-karma.html#interceptors-and-mocks-in-angularjs
+
+Used git cfedential store helper for the Brackets github extention push function.
+  See: https://www.kernel.org/pub/software/scm/git/docs/git-credential-store.html
 
 ----------------------------
 
