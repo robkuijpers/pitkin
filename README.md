@@ -59,19 +59,24 @@ Create a dist build and copy it to the webserver:
 
   grunt dist
 
-Note: add "devel": true to .jshint.rc if you dont't want warnings for alert and console.
+Note: add "devel": true to .jshint.rc if you dont't want warnings for Javascript 'alert' and 'console'.
 
 Followed http://spring.io/guides/gs/rest-service-cors/ to create Spring Boot rest service (you also can add Actuator).
 Followed http://spring.io/guides/gs/accessing-data-mongo/ to create Spring Boot MongoDB app.
 Followed http://spring.io/guides/gs/consuming-rest-angularjs/ to use Angular to invoke rest service.
 
+Added AngularJS following:
+  https://github.com/tnajdek/angular-requirejs-seed/blob/master/app/js/main.js
+  - Is angular-mock bundeled in dist app? If yes, do we need a separate require.js for testing?
+
+Addded junit, midway and e2e testing in Angular with Karma, Macha and Chai following:
+  http://www.yearofmoo.com/2013/01/full-spectrum-testing-with-angularjs-and-karma.html#interceptors-and-mocks-in-angularjs
 
 ----------------------------
 
-
 TODO: add unit and gui tests with headless browser using Karma, Jasmine (PhantomJS).
 TODO: create nodejs / express / mongodb app with rest service (MEAN stack).
-TODO: add AngularJS (requirejs) and invoke rest service.
+TODO: invoke rest service with angular.
 
 Notes:
   - use separate modernizr: (1) its included in the generator, (2) has all options included, (3) needs to be on top anyway so cannot load with requirejs, (4) easy upgrade with bower.json.
