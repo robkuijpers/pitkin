@@ -18,7 +18,10 @@
   "homepage": "https://github.com/robkuijpers/pitkin",
   "private": true,
   "dependencies": {
-    "angular": "~1.2.4",
+    "angular": "~1.2.6",
+    "angular-route": "~1.2.6",
+    "angular-resource": "~1.2.6",
+    "angular-mocks": "~1.2.6",
     "foundation": "~5.0.2",
     "requirejs": "~2.1.4",
     "modernizr": "~2.6.2",
