@@ -33,7 +33,7 @@ require([
 ], function (app, $, angular) {
 
     // Defferred bootstrap to load extra modules.
-    var $html = angular.element(document.getElementsByTagName('html')[0]);
+    // var $html = angular.element(document.getElementsByTagName('html')[0]);
     angular.element(document).ready(function() {
       angular.module('myApp', []);
       angular.resumeBootstrap([]);

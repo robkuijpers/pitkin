@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/robkuijpers/pitkin",
   "private": true,
+  "ignore": [ "node_modules", "app/bower_components", "test" ],    
   "dependencies": {
     "angular": "~1.2.6",
     "angular-route": "~1.2.6",
@@ -27,6 +28,9 @@
     "modernizr": "~2.6.2",
     "jquery": "~2.0.3"
   },
-  "devDependencies": { 
+  "devDependencies": {
+      "mocha": "~1.17.1",
+      "chai": "~1.9.0",
+      "sinonjs": "~1.7.3"
   }
 }
